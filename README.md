@@ -38,14 +38,20 @@ __Predict instances using learned model__
 `python /path/to/ge_cmd.py predict [data] [model] [output]`
 
 For a toy example, please take a look at the `test/` directory:
+
 `cd test/`
+
 `./test.sh`
 
 For more information, please type
+
 `python /path/to/ge_cmd.py learn -h`
+
 `python /path/to/ge_cmd.py predict -h`
 
 
 ### Python module interface
-Please see `test_module.py` for a preliminary example. Documentation TBD.
+Please see `test_module.py` for a preliminary example. 
+
+Documentation TBD.
 

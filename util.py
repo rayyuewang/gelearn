@@ -24,7 +24,7 @@ def load_data(data_path):
 	dat = {}
 	in_f = open(data_path)
 	for line in in_f:
-		task_id, pmid, feature_line = line.split('\t')
+		pmid, feature_line = line.split('\t')
 		d = {}
 		for fv in feature_line.strip().split(' '):
 			f, v = fv.split(':')
@@ -34,7 +34,7 @@ def load_data(data_path):
 	return dat
 
 # each line is in the same surface format as data
-# task_id feature_id [label:value]+
+# feature_id [label:value]+
 # The BIG CAVEAT is: label:value shall be a probability distribution!
 def load_labeled_features(labeled_feature_path):
 	return load_data(labeled_feature_path)

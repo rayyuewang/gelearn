@@ -5,7 +5,7 @@ This tool learns a logistic regression model using the [generalized expectation 
 
 Dependency
 ----------
-* Python (>= 2.7.3)
+* Python (>= 2.7.3, < 3)
 * Theano (>= 0.8.2)
 
 Usage
@@ -37,11 +37,13 @@ __Predict instances using learned model__
 
 `python /path/to/ge_cmd.py predict [data] [model] [output]`
 
+Each line of the `data` file follows the same format as in training. The `model` file is produced by the learning stage as specified above.
 Each line of the `output` file is in the format:
 
-`[data_id] [most_probable_label] ([label_id]:prob )+`
+`[data_id] [most_probable_label_id] ([label_id]:predicted_prob )+`
 
 __Example__
+
 For a toy example, please take a look at the `test/` directory:
 
 `cd test/`
@@ -58,4 +60,4 @@ For more information, please type
 ### Python module interface
 Please see `test_module.py` for a preliminary example. 
 
-Documentation TBD.  Enjoy!
+Documentation to be continued.  Enjoy!

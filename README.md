@@ -58,4 +58,4 @@ For more information, please type
 ### Python module interface
 Please see `test_module.py` for a preliminary example. 
 
-Documentation TBD. If you have questions, contact me at `wangyue [DOT] sjtu [AT] gmail [DOT] com`. Enjoy!
+Documentation TBD.  Enjoy!

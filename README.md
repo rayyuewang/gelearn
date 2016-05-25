@@ -25,12 +25,12 @@ Each line of the `data` file is an unlabeled feature vector in sparse format:
 * `data_id`: string identifier for the data point.
 * `feature_id`: string identifier for the feature dimension, need not be an integer
 
-Each line of the `labeled_features` file is a probability distribution of labels given a feature:
+Each line of the `labeled_features` file is a posterior probability distribution of labels upon seeing a feature:
 
 `[feature_id] TAB ([label_id]:Pr(label_id|feature_id) )+`
 
 * `label_id`: string identifier for a class label
-* Pr(labe)
+* `Pr(label_id|feature_id)`: it is OK to provide an estimate of the probability. __Caveat__: the probability values on each line should add up to 1!
 
 Predict instances using learned model
 `python /path/to/ge_cmd.py predict [data] [model] [output]`

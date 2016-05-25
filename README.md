@@ -10,7 +10,7 @@ Dependency
 
 Usage
 -----
-This tool comes with both a command-line interface and a Python module interface. Its usage pattern is similar to that of LIBLINEAR.
+This tool can be used to train multiclass logistic regression classification model (not just binary model). It comes with both a command-line interface and a Python module interface. Its usage pattern is similar to that of LIBLINEAR.
 
 ### Command-line interface
 

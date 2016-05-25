@@ -30,13 +30,22 @@ Each line of the `labeled_features` file is a posterior probability distribution
 `[feature_id] TAB ([label_id]:Pr(label_id|feature_id) )+`
 
 * `label_id`: string identifier for a class label
-* `Pr(label_id|feature_id)`: it is OK to provide an estimate of the probability. __Caveat__: the probability values on each line should add up to 1!
+* `Pr(label_id|feature_id)`: it is OK to provide an estimate of the probability.
+* __Note__: the probability values on each line should add up to 1!
 
-Predict instances using learned model
+__Predict instances using learned model__
+
 `python /path/to/ge_cmd.py predict [data] [model] [output]`
 
-For more information, type
+For a toy example, please take a look at the `test/` directory:
+`cd test/`
+`./test.sh`
+
+For more information, please type
 `python /path/to/ge_cmd.py learn -h`
 `python /path/to/ge_cmd.py predict -h`
 
+
+### Python module interface
+Please see `test_module.py` for a preliminary example. Documentation TBD.
 

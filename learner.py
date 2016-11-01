@@ -20,6 +20,8 @@
 import ge
 
 def infer_labels(data):
+	if len(data.labels) > 0:
+		return data.labels
 	if len(data.label_prior) > 0:
 		return data.label_prior.keys()
 	if len(data.labeled_features) > 0:
